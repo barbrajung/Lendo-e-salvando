@@ -1,0 +1,10 @@
+<%= form_tag ({:controller => "arquivo", :action => "upload"}), :enctype =>"multipart/form-data" do %>
+    <h1>Desafio de Programação 1</h1>
+    <br/>
+    <% if flash[:notice] %> <div id="error"><%= flash[:notice] %></div> <% end %>
+    <br/>
+    <h3>Selecione o arquivo a ser importado:</h3>
+    <%= file_field_tag :arqtxt %>  <%= submit_tag "Importar" %>
+
+
+<% end %>

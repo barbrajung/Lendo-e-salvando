@@ -1,0 +1,10 @@
+Instruções para configurar a Aplicação:
+
+1.Faça um clone deste repositório.
+2.Execute o comando bundle install em seu terminal, no diretório de sua aplicação.
+3.Execute o seguinte comando no terminal, para a criação do banco:
+  rails generate Venda purchaser_name item_description item_price:float purchase_count: integer merchant_adress merchant_name
+  rake db:migrate
+4.Inicialiea o servidor em produção, com o seguinte comando: rails server
+5.Rode os testes, para ver se a aplicação está OK.
+6.Com o seu servidor rodando, se você abrir abrir http://localhost:3000/arquivo em um navegador de sua preferência, verá a aplicação, que deve rodar tal qual a solicitação do Desafio 1.
