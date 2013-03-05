@@ -1,18 +1,19 @@
 <h1>Cadastro de Vendas</h1>
-
+<br/>
 <h3>
 <% if params[:totaldaimportacao] %>
     <%= "Total da última importação: R$ #{params[:totaldaimportacao]} " %>
 <% end %>
-<br/>
-<br/>
+</h3>
 <% if (params[:numero].to_f > 0) %>
-  <%= "Existe(m) linhas sem valor/quantidade e as mesmas foram importadas. Verifique o banco de dados." %>
+  <%= "Existe(m) linhas sem valor/quantidade e as mesmas não foram importadas. Verifique o arquivo." %>
 <% end %>
 <br/>
+<br/>
+<h3>
 <%= link_to 'Importar novo Arquivo', '/arquivo' %>
 </h3>
-
+<br/>
 
 <table>
   <tr>

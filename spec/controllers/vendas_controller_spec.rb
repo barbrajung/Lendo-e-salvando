@@ -25,7 +25,7 @@ describe VendasController do
   # Venda. As you add validations to Venda, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    { "purchaser_name" => "MyString"}
+    { "purchase_count" => 1, "item_price" => 1.0}
   end
 
   # This should return the minimal set of values that should be in the session

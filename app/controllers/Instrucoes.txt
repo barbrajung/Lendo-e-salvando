@@ -1,9 +1,13 @@
-Instruções para configurar a Aplicação:
+Requisitos da aplicação:
+1. Ruby 1.9
+2. RubyGems 1.8
+3. SQLite3
 
+Instruções para configurar a Aplicação:
 1.Faça um clone deste repositório.
 2.Execute o comando bundle install em seu terminal, no diretório de sua aplicação.
 3.Execute o seguinte comando no terminal, para a criação do banco:
-  rails generate Venda purchaser_name item_description item_price:float purchase_count: integer merchant_adress merchant_name
+  rake db:create
   rake db:migrate
 4.Inicialiea o servidor em produção, com o seguinte comando: rails server
 5.Rode os testes, para ver se a aplicação está OK.
